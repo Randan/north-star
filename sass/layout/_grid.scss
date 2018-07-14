@@ -1,0 +1,16 @@
+.wrap {
+  display: block;
+  width: 100%;
+  max-width: 1054px;
+  margin: 0 auto;
+  padding: 0 15px;
+  &_flex {
+    display: flex;
+    &_align-center {
+      align-items: center;
+    }
+    &_justify-between {
+      justify-content: space-between;
+    }
+  }
+}
