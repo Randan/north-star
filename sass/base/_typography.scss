@@ -1,3 +1,64 @@
 html, body, body * {
   font-family: 'Akrobat', sans-serif;
+  color: #3f3f3f;
+}
+
+h2 {
+  font: {
+    size: 33px;
+    weight: bold;
+  }
+  text: {
+    align: center;
+    transform: uppercase;
+  }
+  line-height: 1.2em;
+  margin-bottom: 80px;
+}
+
+h3 {
+  font: {
+    size: 24px;
+    weight: bold;
+  }
+  text-transform: uppercase;
+  line-height: 1.2em;
+  margin-bottom: 45px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.3em;
+  margin-bottom: 25px;
+}
+
+ul {
+  margin-bottom: 25px;
+  li {
+    font-size: 18px;
+    line-height: 1.3em;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    &:after {
+      display: block;
+      width: 8px;
+      height: 8px;
+      background: url(../images/bullet.png) 0 0 no-repeat;
+      position: absolute;
+      left: 0;
+      top: 7px;
+      content: "";
+    }
+  }
+  &.uppercase {
+    li {
+      text-transform: uppercase;
+    }
+  }
+  &.small-gap {
+    li {
+      margin-bottom: 0;
+    }
+  }
 }

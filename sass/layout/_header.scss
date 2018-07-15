@@ -22,12 +22,17 @@
     ul {
       display: flex;
       flex-wrap: wrap;
+      margin: 0;
+      text-align: center;
       li {
         display: block;
-        margin-left: 25px;
+        margin: {
+          left: 25px;
+          bottom: 0;
+        }
+        padding: 0;
         a {
           font-size: 19px;
-          color: #3f3f3f;
           text: {
             decoration: none;
             transform: uppercase;
@@ -36,6 +41,9 @@
           &:hover {
             color: #559646;
           }
+        }
+        &:after {
+          display: none;
         }
       }
     }

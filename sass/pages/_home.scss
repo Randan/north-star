@@ -1,0 +1,77 @@
+.homepage {
+  &__banner {
+    margin-bottom: 95px;
+    img {
+      width: 100%;
+    }
+  }
+  &__textblock {
+    margin-bottom: 70px;
+    &__content {
+      &__img {
+        img {
+          max-width: 100%;
+        }
+        .mypower {
+          background: url(../images/text-blocks/mypower.png) left top no-repeat;
+          height: 100%;
+          position: relative;
+          max-width: 442px;
+          input {
+            &[type="text"],
+            &[type="submit"] {
+              display: block;
+              width: 45%;
+              height: 16%;
+              max-height: 56px;
+              position: absolute;
+              top: 56%;
+              border-radius: 10px;
+              outline: none;
+            }
+            &[type="text"] {
+              left: 8%;
+              max-width: 160px;
+              background: #fff;
+              border: solid 2px #333;
+              text-transform: uppercase;
+              font-size: 18px;
+              padding: 0 15px;
+            }
+            &[type="submit"] {
+              right: 8%;
+              max-width: 188px;
+              border: none;
+              background: url(../images/submit-btn.png) center center no-repeat;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      &.content_flex {
+        .homepage__textblock__content__img {
+          text-align: right;
+        }
+        &.reverse {
+          .homepage__textblock__content__img {
+            text-align: left;
+          }
+        }
+        @media (max-width: 640px) {
+          .homepage__textblock__content__img {
+            text-align: center;
+            margin-bottom: 30px;
+          }
+          &.reverse {
+            .homepage__textblock__content__img {
+              text-align: center;
+            }
+          }
+        }
+      }
+      .multiple-wrap {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
