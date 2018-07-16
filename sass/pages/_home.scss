@@ -4,6 +4,9 @@
     img {
       width: 100%;
     }
+    @media (max-width: 640px) {
+      margin-bottom: 25px;
+    }
   }
   &__textblock {
     margin-bottom: 70px;
@@ -72,6 +75,89 @@
       .multiple-wrap {
         margin-bottom: 50px;
       }
+    }
+    &_my-power {
+      .content_flex__box,
+      .content_flex__box .mypower {
+        align-self: flex-start;
+        min-height: 200px;
+      }
+    }
+    @media (max-width: 640px) {
+      margin-bottom: 25px;
+    }
+  }
+  &__partners {
+    margin-bottom: 70px;
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        min-height: 140px;
+        margin-bottom: 25px;
+        flex-shrink: 0;
+        img {
+          max-width: 100%;
+        }
+        @media (max-width: 640px) {
+          width: 50%;
+          margin-bottom: 15px;
+        }
+        @media (max-width: 480px) {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    @media (max-width: 640px) {
+      margin-bottom: 25px;
+    }
+  }
+  &__team {
+    margin-bottom: 70px;
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      &__box {
+        flex-shrink: 0;
+        img {
+          max-width: 100%;
+          margin-bottom: 27px;
+        }
+        h5 {
+          font: {
+            size: 24px;
+            weight: bold;
+          }
+          color: #3f3f3f;
+          text-align: center;
+          margin-bottom: 13px;
+        }
+        span {
+          display: block;
+          color: #3f3f3f;
+          font-size: 16px;
+          text: {
+            align: center;
+            transform: uppercase;
+          }
+        }
+        @media (max-width: 1200px) {
+          margin: 0 10px 25px;
+        }
+      }
+      @media (max-width: 1200px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    }
+    @media (max-width: 640px) {
+      margin-bottom: 25px;
     }
   }
 }

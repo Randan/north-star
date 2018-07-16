@@ -5,6 +5,10 @@
     &_flex {
       align-items: center;
       justify-content: space-between;
+      @media (max-width: 640px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
     }
   }
   &__logo {
@@ -17,11 +21,15 @@
         width: 100%;
       }
     }
+    @media (max-width: 640px) {
+      margin-bottom: 15px;
+    }
   }
   &__nav {
     ul {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-around;
       margin: 0;
       text-align: center;
       li {

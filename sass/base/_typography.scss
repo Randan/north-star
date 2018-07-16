@@ -14,6 +14,9 @@ h2 {
   }
   line-height: 1.2em;
   margin-bottom: 80px;
+  @media (max-width: 640px) {
+    margin-bottom: 25px;
+  }
 }
 
 h3 {
@@ -24,12 +27,18 @@ h3 {
   text-transform: uppercase;
   line-height: 1.2em;
   margin-bottom: 45px;
+  @media (max-width: 640px) {
+    margin-bottom: 20px;
+  }
 }
 
 p {
   font-size: 18px;
   line-height: 1.3em;
   margin-bottom: 25px;
+  @media (max-width: 640px) {
+    margin-bottom: 15px;
+  }
 }
 
 ul {
@@ -49,6 +58,9 @@ ul {
       left: 0;
       top: 7px;
       content: "";
+    }
+    @media (max-width: 640px) {
+      margin-bottom: 15px;
     }
   }
   &.uppercase {
