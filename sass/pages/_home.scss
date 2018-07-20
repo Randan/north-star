@@ -16,7 +16,6 @@
           max-width: 100%;
         }
         .mypower {
-          background: url(../images/text-blocks/mypower.png) left top no-repeat;
           height: 100%;
           position: relative;
           max-width: 442px;
@@ -28,7 +27,7 @@
               height: 16%;
               max-height: 56px;
               position: absolute;
-              top: 56%;
+              bottom: 30px;
               border-radius: 10px;
               outline: none;
             }
@@ -81,6 +80,28 @@
       .content_flex__box .mypower {
         align-self: flex-start;
         min-height: 200px;
+      }
+      @media (max-width: 940px) {
+        .homepage__textblock__content {
+          flex-direction: column;
+          &__img {
+            align-self: center;
+            padding: 0;
+            margin-bottom: 15px;
+            .mypower {
+              input {
+                &[type="text"],
+                &[type="submit"] {
+                  width: 39%;
+                }
+              }
+            }
+          }
+          &__text {
+            width: 100%;
+            padding: 0;
+          }
+        }
       }
     }
     @media (max-width: 640px) {
