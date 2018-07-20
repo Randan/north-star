@@ -1,0 +1,188 @@
+.contact {
+  &__title {
+    font: {
+      size: 48px;
+      weight: bold;
+    }
+    color: #52a72c;
+    line-height: 1.3em;
+    text: {
+      align: center;
+      transform: uppercase;
+    }
+    margin-bottom: 40px;
+    @media (max-width: 400px) {
+      font-size: 36px;
+    }
+  }
+  &__subtitle {
+    font: {
+      size: 24px;
+      weight: bold;
+    }
+    line-height: 1.8em;
+    color: #3f3f3f;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  &__form {
+    margin-bottom: 70px;
+    &__title {
+      font: {
+        size: 36px;
+        weight: normal;
+      }
+      color: #3f3f3f;
+      line-height: 1.3em;
+      text: {
+        align: center;
+        transform: uppercase;
+      }
+      margin-bottom: 40px;
+    }
+    form {
+      display: block;
+      ul.contact__form__heard {
+        display: flex;
+        justify-content: space-around;
+        li {
+          font-size: 30px;
+          color: #3f3f3f;
+          padding-left: 30px;
+          &:after {
+            width: 15px;
+            height: 15px;
+            background: #3f3f3f;
+            border-radius: 50%;
+            top: auto;
+            bottom: 10px;
+            @media (max-width: 400px) {
+              bottom: 7px;
+            }
+          }
+          &:hover {
+            cursor: pointer;
+            color: #52a72c;
+          }
+          &.active {
+            &:after {
+              background: #52a72c;
+            }
+          }
+          @media (max-width: 800px) {
+            margin-bottom: 0;
+          }
+          @media (max-width: 400px) {
+            font-size: 24px;
+          }
+        }
+        @media (max-width: 940px) {
+          flex-direction: column;
+          align-items: center;
+        }
+        @media (max-width: 800px) {
+          align-items: flex-start;
+        }
+      }
+      .contact__form__box {
+        width: 100%;
+        max-width: 810px;
+        margin: 0 auto 60px;
+        &__input {
+          display: flex;
+          align-items: center;
+          margin-bottom: 15px;
+          label {
+            display: flex;
+            align-items: center;
+            width: 45%;
+            .img-box {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              max-width: 74px;
+              width: 100%;
+              margin-right: 35px;
+              img {
+                max-width: 100%;
+              }
+              @media (max-width: 800px) {
+                max-width: 35px;
+                margin-right: 10px;
+              }
+            }
+            span {
+              font: {
+                size: 34px;
+                weight: bold;
+              }
+              text-transform: uppercase;
+              color: #3f3f3f;
+            }
+            @media (max-width: 800px) {
+              width: 100%;
+              margin-bottom: 10px;
+            }
+          }
+          input[type="text"],
+          input[type="email"] {
+            display: block;
+            width: 55%;
+            height: 55px;
+            padding: 0 25px;
+            background: #fff;
+            border: solid 1px #010202;
+            border-radius: 15px;
+            outline: none;
+            font: {
+              size: 25px;
+              weight: bold;
+            }
+            color: #3f3f3f;
+            @media (max-width: 800px) {
+              width: 100%;
+            }
+          }
+          @media (max-width: 800px) {
+            flex-direction: column;
+          }
+        }
+      }
+      input[type="submit"] {
+        display: block;
+        width: 100%;
+        max-width: 390px;
+        height: 79px;
+        margin: 0 auto;
+        border: none;
+        background: #358b25;
+        font: {
+          size: 35px;
+          weight: bold;
+        }
+        text-transform: uppercase;
+        color: #fff;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+  &__hand-shake {
+    display: block;
+    width: 100%;
+    max-width: 542px;
+    margin: 0 auto 100px;
+  }
+  &__text {
+    margin-bottom: 100px;
+    p {
+      font: {
+        size: 24px;
+        weight: bold;
+      }
+      line-height: 1.2em;
+      color: #3f3f3f;
+      text-align: center;
+    }
+  }
+}
