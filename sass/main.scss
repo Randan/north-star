@@ -1,4 +1,7 @@
 @import 
+    'external/jquery-ui';
+
+@import 
     'abstracts/variables',
     'abstracts/mixins';
 
@@ -12,16 +15,11 @@
     'base/typography';
 
 @import 
-    'components/buttons';
-
-@import 
-    'layout/navigation',
     'layout/grid',
     'layout/header',
-    'layout/footer',
-    'layout/sidebar',
-    'layout/forms';
+    'layout/footer';
     
 @import 
     'pages/contact',
-    'pages/home';
+    'pages/home',
+    'pages/calculator';

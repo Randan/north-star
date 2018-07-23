@@ -13,6 +13,7 @@ module.exports = function (grunt) {
         files: {
           'assets/main.min.js': [
             'js/lib/jquery-3.3.1.min.js',
+            'js/lib/jquery-ui.min.js',
             'js/main.js'
           ]
         }
