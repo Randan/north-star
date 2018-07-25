@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,9 @@
 
   <link rel="stylesheet" href="assets/main.min.css">
 </head>
+
 <body>
-  
+
   <header class="header">
     <div class="wrap wrap_flex">
       <div class="header__logo">
@@ -36,7 +38,8 @@
           </div>
           <div class="calculator__section__box" style="position: relative;">
             <div class="calculator__section_roof-slope__bg-box" data-pos="0"></div>
-            <div class="calculator__section_roof-slope__result-num"><span>0</span>°</div>
+            <div class="calculator__section_roof-slope__result-num">
+              <span>0</span>°</div>
             <div class="calculator__section_roof-slope__slider-box">
               <div class="slider"></div>
               <div class="num-min">0°</div>
@@ -46,7 +49,19 @@
             </div>
           </div>
           <div class="calculator__section__box">
-            <div class="calculator__need-help"><span>Need help?</span></div>
+            <div class="calculator__need-help">
+              <span data-fancybox data-src="#roof-slope-hidden">Need help?</span>
+            </div>
+            <div class="calculator__need-help_hidden-text" id="roof-slope-hidden">
+              <p>
+                If you have a flat roof, panels can be angled when installed. The optimum angle for solar power collection in the UK is 35°.
+              </p>
+
+              <p>
+                One way of determining the slope of your roof is to look at the rafters on your attic. Use the default of 40° if you are
+                unsure as this is the typical for a UK roof.
+              </p>
+            </div>
           </div>
         </div>
         <div class="calculator__section__add-line">
@@ -58,10 +73,51 @@
         <div class="calculator__section__flex">
           <div class="calculator__section__box">
             <h3 class="calculator__section__title">2) Shading</h3>
+            <div class="calculator__section_shading__text visible" data-pos="20">
+              None or very little less than
+              <span>20%</span> of sky
+            </div>
+            <div class="calculator__section_shading__text" data-pos="40">
+              Modest
+              <span>20-60%</span> of sky
+            </div>
+            <div class="calculator__section_shading__text" data-pos="60">
+              Significant
+              <span>60-80%</span> of sky
+            </div>
+            <div class="calculator__section_shading__text" data-pos="80">
+              Heavy more than
+              <span>80%</span> of sky
+            </div>
           </div>
-          <div class="calculator__section__box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius dolorum libero possimus? Hic, optio nemo omnis exercitationem blanditiis officiis assumenda suscipit error molestias. Dolorem eveniet fugit dolorum laboriosam reprehenderit.</div>
+          <div class="calculator__section__box" style="position: relative;">
+            <div class="calculator__section_shading__bg-box" data-pos="20"></div>
+            <div class="calculator__section_shading__slider-box">
+              <div class="slider-wrap">
+                <div class="slider"></div>
+                <div class="black-divider" style="left: 35%"></div>
+                <div class="black-divider" style="left: 51%"></div>
+                <div class="black-divider" style="left: 67%"></div>
+              </div>
+              <div class="num-min">None</div>
+              <div class="num-max">Heavy</div>
+              <button class="num-plus"></button>
+              <button class="num-minus"></button>
+            </div>
+          </div>
           <div class="calculator__section__box">
-            <div class="calculator__need-help"><span>Need help?</span></div>
+            <div class="calculator__need-help">
+              <span data-fancybox data-src="#shading-hidden">Need help?</span>
+            </div>
+            <div class="calculator__need-help_hidden-text" id="shading-hidden">
+              <p>
+                Shading from nearby obstacles, such as trees and buildings, will reduce the solar energy that reaches your PV panels, and
+                therefore reduce the electricity generated.
+              </p>
+              <p>
+                Ideally you would only install panels on roofs with no nearby obstructions, but that isn’t always possible.
+              </p>
+            </div>
           </div>
         </div>
         <div class="calculator__section__add-line">
@@ -74,9 +130,34 @@
           <div class="calculator__section__box">
             <h3 class="calculator__section__title">3) Roof direction</h3>
           </div>
-          <div class="calculator__section__box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius dolorum libero possimus? Hic, optio nemo omnis exercitationem blanditiis officiis assumenda suscipit error molestias. Dolorem eveniet fugit dolorum laboriosam reprehenderit.</div>
           <div class="calculator__section__box">
-            <div class="calculator__need-help"><span>Need help?</span></div>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d1613.9523624918977!2d-0.1427776150497662!3d51.501234878654074!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sua!4v1532471567007"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
+              <div class="compass">
+                <div class="compass__arrow" style="transform: translate(-50%, -50%) rotate(0deg);"></div>
+              </div>
+            </div>
+            <div class="calculator__section_roof-direction__slider-box">
+              <div class="slider-wrap">
+                <div class="slider"></div>
+              </div>
+              <div class="num-min">North</div>
+              <button class="num-plus"></button>
+              <button class="num-minus"></button>
+            </div>
+          </div>
+          <div class="calculator__section__box">
+            <div class="calculator__need-help">
+              <span data-fancybox data-src="#roof-direction-hidden">Need help?</span>
+            </div>
+            <div class="calculator__need-help_hidden-text" id="roof-direction-hidden">
+              <p>
+                You can use the map to see which way the best side of your roof is facing. The closer you can be the better but it doesn't
+                have to be exact. The best direction for solar power collection in the UK is south facing. If you have a
+                flat roof your panels can face any direction.
+              </p>
+            </div>
           </div>
         </div>
         <div class="calculator__section__add-line">
@@ -89,9 +170,29 @@
           <div class="calculator__section__box">
             <h3 class="calculator__section__title">4) Roof dimensions</h3>
           </div>
-          <div class="calculator__section__box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius dolorum libero possimus? Hic, optio nemo omnis exercitationem blanditiis officiis assumenda suscipit error molestias. Dolorem eveniet fugit dolorum laboriosam reprehenderit.</div>
+          <div class="calculator__section__box" style="text-align: center">
+            <img src="images/calculator/roof-dimensions.png" alt="">
+            <div class="calculator__section_roof-dimensions__form">
+              <div class="calculator__section_roof-dimensions__form__box">
+                <label for="">Lendth</label>
+                <input type="text" name="" id="">
+              </div>
+              <div class="calculator__section_roof-dimensions__form__box">
+                <label for="">Width</label>
+                <input type="text" name="" id="">
+              </div>
+            </div>
+          </div>
           <div class="calculator__section__box">
-            <div class="calculator__need-help"><span>Need help?</span></div>
+            <div class="calculator__need-help">
+              <span data-fancybox data-src="#roof-dimensions-hidden">Need help?</span>
+            </div>
+            <div class="calculator__need-help_hidden-text" id="roof-dimensions-hidden">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi saepe, ipsum quisquam asperiores accusantium qui repellat
+                libero odio ut vitae officiis suscipit. Sequi consectetur optio adipisci quas minus? Alias, assumenda.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -100,12 +201,31 @@
         <div class="calculator__section__flex">
           <div class="calculator__section__box">
             <h3 class="calculator__section__title">5) Current monthly electricity bills</h3>
+            <p>Please enter your monthly electricity bill</p>
+            <input type="text">
           </div>
-          <div class="calculator__section__box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius dolorum libero possimus? Hic, optio nemo omnis exercitationem blanditiis officiis assumenda suscipit error molestias. Dolorem eveniet fugit dolorum laboriosam reprehenderit.</div>
           <div class="calculator__section__box">
-            <div class="calculator__need-help"><span>Need help?</span></div>
+            <div class="calculator__section_bills__img-wrap">
+              <img src="images/calculator/bills.png" alt="">
+            </div>
+          </div>
+          <div class="calculator__section__box">
+            <div class="calculator__need-help">
+              <span data-fancybox data-src="#bills-hidden">Need help?</span>
+            </div>
+            <div class="calculator__need-help_hidden-text" id="bills-hidden">
+              <p>
+                An average 3-bedroom gas-heated home in the UK uses about £50/month of electricity (this is around 3,950 kWh each year).
+                You don’t have to be too accurate with the figure as it is only used to give you a guide to what percentage
+                of your home’s electricity will be delivered by your solar panels.
+              </p>
+            </div>
           </div>
         </div>
+      </section>
+
+      <section class="calculator__section calculator__section_next">
+        <button>Next</button>
       </section>
 
     </div>
@@ -113,7 +233,8 @@
 
   <footer class="footer">
     <div class="wrap">
-      <a href="#" class="footer__contact-us">Contact us</a><br>
+      <a href="#" class="footer__contact-us">Contact us</a>
+      <br>
       <a href="#" class="footer__send-email">Send us an email</a>
       <div class="footer__copyright">
         <span>Copyright © 2018</span>
@@ -125,4 +246,5 @@
 
   <script src="assets/main.min.js"></script>
 </body>
+
 </html>

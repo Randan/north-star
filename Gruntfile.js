@@ -14,6 +14,7 @@ module.exports = function (grunt) {
           'assets/main.min.js': [
             'js/lib/jquery-3.3.1.min.js',
             'js/lib/jquery-ui.min.js',
+            'js/lib/jquery.fancybox.min.js',
             'js/main.js'
           ]
         }
