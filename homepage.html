@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,9 @@
 
   <link rel="stylesheet" href="assets/main.min.css">
 </head>
+
 <body>
-  
+
   <header class="header">
     <div class="wrap wrap_flex">
       <div class="header__logo">
@@ -19,13 +21,24 @@
       </div>
       <div class="header__nav">
         <ul>
-          <li><a href="/" class="active">Home</a></li>
-          <li><a href="#">What we do</a></li>
-          <li><a href="#">Social housing</a></li>
-          <li><a href="#">Home owners</a></li>
-          <li><a href="#">Labs</a></li>
-          <li><a href="#">Partners</a></li>
-          <li><a href="#">Team</a></li>
+          <li>
+            <a href="/" class="active">Home</a>
+          </li>
+          <li>
+            <a href="#" class="anchor-from" data-scroll="whatwedo">What we do</a>
+          </li>
+          <li>
+            <a href="#" class="anchor-from" data-scroll="socialhousing">Social housing</a>
+          </li>
+          <li>
+            <a href="#" class="anchor-from" data-scroll="homeowners">Home owners</a>
+          </li>
+          <li>
+            <a href="#" class="anchor-from" data-scroll="partners">Partners</a>
+          </li>
+          <li>
+            <a href="#" class="anchor-from" data-scroll="team">Team</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -38,15 +51,18 @@
         <img src="images/banner.jpg" alt="">
       </section>
 
-      <section class="homepage__textblock">
+      <section class="homepage__textblock anchor-to"  data-scroll="whatwedo">
         <h2 class="title-h2 homepage__textblock__title">What we do</h2>
         <div class="homepage__textblock__content content_flex">
           <div class="homepage__textblock__content__text content_flex__box">
             <p>
-              North Star provides services to maximise energy savings, safety, and security using Artificial Intelligence and Machine learning. We also provide highly competitive financing options specifically for Social Housing and Private Residential properties.
-            </p> 
+              North Star provides services to maximise energy savings, safety, and security using Artificial Intelligence and Machine learning.
+              We also provide highly competitive financing options specifically for Social Housing and Private Residential
+              properties.
+            </p>
             <p>
-              Our latest offering is an Energy as a Service (EaaS) solution for sociaL and privately rented properties, and homeowners with the following hardware installed by professional installers:
+              Our latest offering is an Energy as a Service (EaaS) solution for sociaL and privately rented properties, and homeowners
+              with the following hardware installed by professional installers:
             </p>
             <ul class="uppercase small-gap">
               <li>
@@ -61,7 +77,7 @@
             </ul>
             <p>
               Our technology and logistics are powered by market leading trusted partners, with guarantees of reliability and efficiency.
-            </p> 
+            </p>
           </div>
           <div class="homepage__textblock__content__img content_flex__box">
             <img src="images/text-blocks/whatwedo.png" alt="">
@@ -82,23 +98,28 @@
             </div>
           </div>
           <div class="homepage__textblock__content__text content_flex__box">
-              <p>
-                MyPower, a combination of rooftop solar photovoltaic (PV) panels and battery storage. This combination increases the 20% to 30% electricity savings enjoyed by households with solar-only to over double.
-              </p>
-              <p>
-                By installing the highest quality equipment at trade prices via our delivery partner, Travis Perkins Plc means we can install MyPower at prices generally less than others install rooftop solar PV on its own. This guarantees the payback period is the shortest in today’s market.
-              </p>
-              <p>
-                All installations are performed by accredited and certified local installation engineering firms and the equipment installed is only from leading manufacturer’s carefully selected for reliability and efficiency, all with long equipment warranties. 
-              </p>
-              <p>
-                Just go to our solar calculator to find a detailed system cost and savings breakdown.
-              </p>
+            <p>
+              MyPower, a combination of rooftop solar photovoltaic (PV) panels and battery storage. This combination increases the 20%
+              to 30% electricity savings enjoyed by households with solar-only to over double.
+            </p>
+            <p>
+              By installing the highest quality equipment at trade prices via our delivery partner, Travis Perkins Plc means we can install
+              MyPower at prices generally less than others install rooftop solar PV on its own. This guarantees the payback
+              period is the shortest in today’s market.
+            </p>
+            <p>
+              All installations are performed by accredited and certified local installation engineering firms and the equipment installed
+              is only from leading manufacturer’s carefully selected for reliability and efficiency, all with long equipment
+              warranties.
+            </p>
+            <p>
+              Just go to our solar calculator to find a detailed system cost and savings breakdown.
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="homepage__textblock">
+      <section class="homepage__textblock anchor-to" data-scroll="homeowners">
         <h2 class="title-h2 homepage__textblock__title">Home owners</h2>
         <div class="homepage__textblock__content content_flex">
           <div class="homepage__textblock__content__text content_flex__box">
@@ -107,7 +128,8 @@
                 Targeted 70% to 80% savings on electricity bills
               </li>
               <li>
-                By checking your savings on our savings calculator shows the estimated amount of electricity you don’t need to buy anymore – for the system lifetime. Some parts will need replacing every 10 years. 
+                By checking your savings on our savings calculator shows the estimated amount of electricity you don’t need to buy anymore
+                – for the system lifetime. Some parts will need replacing every 10 years.
               </li>
               <li>
                 The highest quality equipment at trade prices from Travis Perkins means the shortest payback period in the market.
@@ -132,7 +154,7 @@
         </div>
       </section>
 
-      <section class="homepage__textblock">
+      <section class="homepage__textblock anchor-to" data-scroll="socialhousing">
         <h2 class="title-h2 homepage__textblock__title">Social housing</h2>
         <div class="homepage__textblock__content">
           <div class="multiple-wrap content_flex">
@@ -185,97 +207,91 @@
         </div>
       </section>
 
-      <section class="homepage__textblock">
-          <h2 class="title-h2 homepage__textblock__title">North star labs</h2>
-          <div class="homepage__textblock__content content_flex">
-            <div class="homepage__textblock__content__text content_flex__box">
-              <p>
-                At North Star, we aim to continuously innovate through our partnership with leading UK universities and key actors in the commercial and social space.
-              </p>
-              <p>
-                We strive to develop technology that adds value to users' life and our platform is open and extensible and continuously learns. With our partners, we are developing solutions in the following areas:
-              </p>
-              <ul class="uppercase">
-                <li>
-                  Peer-to-peer energy trading
-                </li>
-                <li>
-                  Assured Living technologies
-                </li>
-                <li>
-                  Insurance Products based on IoT and Blockchain
-                </li>
-                <li>
-                  Thermal modelling of buildings
-                </li>
-              </ul>
-            </div>
-            <div class="homepage__textblock__content__img content_flex__box">
-              <img src="images/text-blocks/northstarlabs.png" alt="">
-            </div>
-          </div>
-        </section>
+      <section class="homepage__partners anchor-to" data-scroll="partners">
+        <h2 class="title-h2 homepage__partners__title">Partners</h2>
+        <div class="homepage__partners__content">
+          <a href="#">
+            <img src="images/parters/solfex.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="images/parters/toriga.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="images/parters/pts.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="images/parters/liberty-group.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="images/parters/sonnen.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="images/parters/byd.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="images/parters/goodwe.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="images/parters/trina-solar.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="images/parters/jinko-solar.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="images/parters/triodos-bank.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="images/parters/pinsent-masons.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="images/parters/southhampton.jpg" alt="">
+          </a>
+        </div>
+      </section>
 
-        <section class="homepage__partners">
-          <h2 class="title-h2 homepage__partners__title">Partners</h2>
-          <div class="homepage__partners__content">
-            <a href="#"><img src="images/parters/solfex.jpg" alt=""></a>
-            <a href="#"><img src="images/parters/toriga.jpg" alt=""></a>
-            <a href="#"><img src="images/parters/pts.jpg" alt=""></a>
-            <a href="#"><img src="images/parters/liberty-group.jpg" alt=""></a>
-            <a href="#"><img src="images/parters/sonnen.jpg" alt=""></a>
-            <a href="#"><img src="images/parters/byd.jpg" alt=""></a>
-            <a href="#"><img src="images/parters/goodwe.jpg" alt=""></a>
-            <a href="#"><img src="images/parters/trina-solar.jpg" alt=""></a>
-            <a href="#"><img src="images/parters/jinko-solar.jpg" alt=""></a>
-            <a href="#"><img src="images/parters/triodos-bank.jpg" alt=""></a>
-            <a href="#"><img src="images/parters/pinsent-masons.jpg" alt=""></a>
-            <a href="#"><img src="images/parters/southhampton.jpg" alt=""></a>
+      <section class="homepage__team anchor-to" data-scroll="team">
+        <h2 class="title-h2 homepage__team__title">Team</h2>
+        <div class="homepage__team__content">
+          <div class="homepage__team__content__box">
+            <img src="images/team-dumb.jpg" alt="">
+            <h5>Stewart Dodd</h5>
+            <span>Managing Director</span>
           </div>
-        </section>
-
-        <section class="homepage__team">
-          <h2 class="title-h2 homepage__team__title">Team</h2>
-          <div class="homepage__team__content">
-            <div class="homepage__team__content__box">
-              <img src="images/team-dumb.jpg" alt="">
-              <h5>Stewart Dodd</h5>
-              <span>Managing Director</span>
-            </div>
-            <div class="homepage__team__content__box">
-              <img src="images/team-dumb.jpg" alt="">
-              <h5>Stewart Dodd</h5>
-              <span>Managing Director</span>
-            </div>
-            <div class="homepage__team__content__box">
-              <img src="images/team-dumb.jpg" alt="">
-              <h5>Stewart Dodd</h5>
-              <span>Managing Director</span>
-            </div>
-            <div class="homepage__team__content__box">
-              <img src="images/team-dumb.jpg" alt="">
-              <h5>Stewart Dodd</h5>
-              <span>Managing Director</span>
-            </div>
-            <div class="homepage__team__content__box">
-              <img src="images/team-dumb.jpg" alt="">
-              <h5>Stewart Dodd</h5>
-              <span>Managing Director</span>
-            </div>
-            <div class="homepage__team__content__box">
-              <img src="images/team-dumb.jpg" alt="">
-              <h5>Stewart Dodd</h5>
-              <span>Managing Director</span>
-            </div>
+          <div class="homepage__team__content__box">
+            <img src="images/team-dumb.jpg" alt="">
+            <h5>Stewart Dodd</h5>
+            <span>Managing Director</span>
           </div>
-        </section>
+          <div class="homepage__team__content__box">
+            <img src="images/team-dumb.jpg" alt="">
+            <h5>Stewart Dodd</h5>
+            <span>Managing Director</span>
+          </div>
+          <div class="homepage__team__content__box">
+            <img src="images/team-dumb.jpg" alt="">
+            <h5>Stewart Dodd</h5>
+            <span>Managing Director</span>
+          </div>
+          <div class="homepage__team__content__box">
+            <img src="images/team-dumb.jpg" alt="">
+            <h5>Stewart Dodd</h5>
+            <span>Managing Director</span>
+          </div>
+          <div class="homepage__team__content__box">
+            <img src="images/team-dumb.jpg" alt="">
+            <h5>Stewart Dodd</h5>
+            <span>Managing Director</span>
+          </div>
+        </div>
+      </section>
 
     </div>
   </div>
 
   <footer class="footer">
     <div class="wrap">
-      <a href="#" class="footer__contact-us">Contact us</a><br>
+      <a href="#" class="footer__contact-us">Contact us</a>
+      <br>
       <a href="#" class="footer__send-email">Send us an email</a>
       <div class="footer__copyright">
         <span>Copyright © 2018</span>
@@ -287,4 +303,5 @@
 
   <script src="assets/main.min.js"></script>
 </body>
+
 </html>

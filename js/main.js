@@ -117,13 +117,17 @@ $(document).ready(function () {
     roofDirectionCurr = roofDirection.slider( "option", "value" );
   }
 
-  // need help
-  // $('.calculator__need-help span')
-  //   .on('click', function(){
-  //     $(this)
-  //       .closest('.calculator__section__box')
-  //       .find('.calculator__need-help_hidden-text')
-  //       .fancybox();
-  // });
+  // anchors
+  var elOffset;
+  var dataScroll;
+  function scrollTo(element, duration, plus, minus) {
+    elOffset = $(element).offset();
+    $('html, body').animate({scrollTop: elOffset.top + plus - minus}, duration);
+  }
+
+  $('.anchor-from').on('click', function(){
+    dataScroll = $(this).data('scroll');
+    scrollTo('.anchor-to[data-scroll="'+ dataScroll +'"]', 2000, 0, 50);
+  });
 
 });

@@ -1,0 +1,213 @@
+.pdf-full {
+  .wrap {
+    max-width: 810px;
+    &.wide {
+      max-width: 1200px;
+      p {
+        font: {
+          size: 24px;
+          weight: bold;
+        }
+        text: {
+          align: center;
+        }
+        color: #3f3f3f;
+        margin-bottom: 100px;
+      }
+    }
+  }
+  &__title {
+    font: {
+      size: 48px;
+      weight: bold;
+    }
+    line-height: 1.3em;
+    color: #52a72c;
+    text: {
+      align: center;
+      transform: uppercase;
+    }
+    margin-bottom: 45px;
+  }
+  &__big-img-wrap {
+    text-align: center;
+    margin-bottom: 70px;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 140px;
+    &__title div {
+      width: 100%;
+      font-weight: bold;
+      font-size: 21px;
+      color: #3f3f3f;
+      padding-bottom: 20px;
+      text-align: right;
+      @media (max-width: 768px) {
+        text-align: left;
+      }
+    }
+    div {
+      width: 50%;
+      &:last-child {
+        text-align: right;
+        @media (max-width: 768px) {
+          text-align: center;
+        }
+      }
+      @media (max-width: 768px) {
+        text-align: center;
+        width: 100%;
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+    h3 {
+      font-weight: bold;
+      font-size: 25px;
+      text-transform: uppercase;
+      color: #3f3f3f;
+      margin-bottom: 30px;
+    }
+    p {
+      font-weight: bold;
+      font-size: 20px;
+      color: #3f3f3f;
+      margin-bottom: 15px;
+      &.green {
+        font-size: 60px;
+        text-transform: uppercase;
+        color: #2f891e;
+        margin: 0 0 50px;
+      }
+    }
+    &__kk {
+      margin-bottom: 100px;
+      width: 100%;
+      tr {
+        td {
+          text-align: right;
+          &:first-child,
+          &:last-child {
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: 0;
+            padding-bottom: 10px;
+          }
+          &:first-child {
+            color: #3f3f3f;
+            width: 60%;
+            @media (max-width: 768px) {
+              text-align: left;
+              width: 50%;
+            }
+          }
+          &:last-child {
+            width: 40%;
+            color: #7c7b7b;
+            @media (max-width: 768px) {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+  }
+  &__table {
+    width: 100%;
+    margin-bottom: 50px;
+    &.last-table {
+      margin-bottom: 150px;
+    }
+    tr {
+      th,
+      td {
+        vertical-align: bottom;
+        font-weight: bold;
+        &:first-child {
+          text-align: left
+        }
+        &:last-child {
+          text-align: right;
+        }
+        @media (max-width: 768px) {
+          vertical-align: middle;
+        }
+      }
+      th {
+        padding-bottom: 30px;
+        &:first-child {
+          font-size: 34px;
+          color: #3f3f3f;
+          text-transform: uppercase;
+        }
+        &:last-child {
+          font-size: 48px;
+          color: #2f891e;
+        }
+        &.th-small {
+          font-size: 36px;
+          text-transform: uppercase;
+        }
+        @media (max-width: 768px) {
+          font-size: 20px !important;
+          padding-bottom: 10px;
+        }
+      }
+      td {
+        padding: 7px 0;
+        &:first-child {
+          font-size: 24px;
+          color: #3f3f3f;
+        }
+        &:last-child {
+          font-size: 36px;
+          color: #444;
+        }
+        @media (max-width: 768px) {
+          font-size: 15px !important;
+        }
+      }
+    }
+  }
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    button {
+      display: block;
+      width: 100%;
+      max-width: 356px;
+      height: 76px;
+      border: none;
+      border-radius: 8px;
+      background: #52a72c;
+      outline: 0;
+      cursor: pointer;
+      font: {
+        size: 24px;
+        weight: bold;
+      }
+      text: {
+        align: center;
+        transform: uppercase;
+      }
+      color: #fff;
+      @media (max-width: 768px) {
+        margin-bottom: 15px;
+      }
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
